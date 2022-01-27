@@ -7,4 +7,9 @@
     <targets>
         <target>lightning__RecordPage</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="channelName" label="channelName" type="String" default="/data/AccountChangeEvent" required="false"/>
+        </targetConfig>
+      </targetConfigs>
 </LightningComponentBundle>

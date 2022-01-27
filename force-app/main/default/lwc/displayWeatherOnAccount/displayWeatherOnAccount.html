@@ -2,7 +2,7 @@
   @description       : 
   @author            : Gabriel Mihaila
   @group             : 
-  @last modified on  : 01-26-2022
+  @last modified on  : 01-27-2022
   @last modified by  : Gabriel Mihaila
 -->
 <template >
@@ -21,9 +21,8 @@
                                 </lightning-output-field>
                                 <lightning-output-field field-name="BillingCountry">
                                 </lightning-output-field>
-                                <lightning-input type="text" label="Weather: " data-id={account.Id} disabled>
+                                <lightning-input type="text" label="Weather: " data-id={account.Id} value={account.AccountCurrentWeather__c} disabled>
                                 </lightning-input>
-                                <lightning-button label="Weather Refresh" title="Weather Refresh" onclick={refreshWeather} class="slds-m-left_x-small"></lightning-button>
                             </div>
                         </lightning-record-view-form>
                     </li>
