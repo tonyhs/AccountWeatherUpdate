@@ -27,11 +27,8 @@ export default class DisplayWeatherOnAccount extends LightningElement {
             let inputList = this.template.querySelectorAll("[data-id='" + this.recordId + "']");
             for (let input of inputList) {
                 if(result != undefined) {
-                    console.log(result[0])
-                    console.log(result[0].AccountCurrentWeather__c)
                     this.weatherDescription = result[0].AccountCurrentWeather__c
                     input.value = result[0].AccountCurrentWeather__c
-                    console.log(input.value);
                 } 
             }
         })
